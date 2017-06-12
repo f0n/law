@@ -1,4 +1,4 @@
-/** 
+/**
 --------------------------------------------
 Card Flip
 --------------------------------------------
@@ -9,11 +9,11 @@ Setup a mixin for your flip so you can include it into any element that has this
   <div class="face back"> </div>  <- required classes
  </figure>
 
-Supports arguments for Speed and Direction. 
+Supports arguments for Speed and Direction.
 The direction you can specify using "x" "y" or "z"
 
 Use it by putting "@include flip();" in the parent element you want to flip.
-You can style the card however you want. Here are some examples. 
+You can style the card however you want. Here are some examples.
 
 */
 html {
@@ -29,11 +29,11 @@ body {
           perspective-origin: 50% 50%;
   background-color: #242424;
    background-image: url("../assets/campus.jpg");
-   background-size: 100%; 
+   background-size: 100%;
   text-align: center;
   margin: 0;
   padding: 0;
-  width: 2000px;
+  width: 1600px;
   margin: 0 auto;
 }
 
@@ -91,7 +91,7 @@ body {
 .card .front {
   color: #ffffff;
   background-color: #004d99;
-    
+
 }
 .card .front .logo {
   width: 70px;
@@ -123,9 +123,9 @@ body {
 }
 .card h2 {
   text-transform: uppercase;
-  font-size: 22px;
+  font-size: 28px;
   position: absolute;
-  top: 170px;   
+  top: 170px;
   margin: 0;
   line-height: 0.7em;
   padding: 10px;
@@ -150,18 +150,18 @@ body {
 }
 
 .darth h2 {
-  font-size: 20px;
+  font-size: 25px;
   line-height: 1em;
   bottom: 80px;
 }
 .darth .front {
   background-image: url(../assets/tf.png);
-  
+
   background-size: 100%;
   background-position: 50% 50%;
   -webkit-transition: background 0.3s;
   transition: background 0.3s;
-    
+
 
 }
 .darth .front:hover {
@@ -178,12 +178,12 @@ body {
 }
 .dragon .front {
   background-image: url(../assets/dragon.jpg);
-  
+
   background-size: 130%;
   background-position: 50% 50%;
   -webkit-transition: background 0.3s;
   transition: background 0.3s;
-    
+
 
 }
 .dragon .front:hover {
@@ -197,7 +197,7 @@ body {
   font-size: 20px;
   line-height: 1em;
   bottom: 80px;
-}  
+}
 .luke .front {
   background-image: url(../assets/gnc.png  );
   background-size: 200%;
@@ -227,11 +227,11 @@ body {
 .cmg {
   width: 50px;
   height: 200px;
-  transition: all 1s ease-in-out; 
+  transition: all 1s ease-in-out;
 }
 
 
-.cmg:hover { 
+.cmg:hover {
   transform: scale(1.1);
   z-index: 1000;}
 

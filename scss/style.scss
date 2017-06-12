@@ -1,4 +1,4 @@
-/** 
+/**
 --------------------------------------------
 Card Flip
 --------------------------------------------
@@ -9,11 +9,11 @@ Setup a mixin for your flip so you can include it into any element that has this
   <div class="face back"> </div>  <- required classes
  </figure>
 
-Supports arguments for Speed and Direction. 
+Supports arguments for Speed and Direction.
 The direction you can specify using "x" "y" or "z"
 
 Use it by putting "@include flip();" in the parent element you want to flip.
-You can style the card however you want. Here are some examples. 
+You can style the card however you want. Here are some examples.
 
 */
 @mixin flip($speed: 0.5s, $direction: "y") {
@@ -23,13 +23,13 @@ You can style the card however you want. Here are some examples.
   &.flip {
     @if $direction == "x" {
       transform: rotateX(180deg);
-    } 
+    }
     @if $direction == "y" {
       transform: rotateY(180deg);
-    } 
+    }
     @if $direction == "z" {
       transform: rotateZ(180deg);
-    } 
+    }
     transition: transform $speed;
   }
   .face {
@@ -44,20 +44,20 @@ You can style the card however you want. Here are some examples.
     // flip the back
     @if $direction == "x" {
       transform: rotateX(180deg);
-    } 
+    }
     @if $direction == "y" {
       transform: rotateY(180deg);
-    } 
+    }
     @if $direction == "z" {
       transform: rotateZ(180deg);
-    }   
+    }
   }
 }
 
 html {margin:0; padding:0;}
 
 body {
-  font-family:  Arial, Sans-Serif; 
+  font-family:  Arial, Sans-Serif;
     perspective: 1500px;
     perspective-origin: 50% 50%;
     background-color: #242424;
@@ -74,20 +74,20 @@ body {
   @include flip(); // include the flip feature.
   user-select: none; // disable selections
   cursor: pointer;  // give the user a hand so they know to click
-  font-family:  Arial, Sans-Serif; 
+  font-family:  Arial, Sans-Serif;
   width: 400px;
   height: 600px;
   color: white;
   display: inline-block; // stack em!
   margin: 10px;
   .face { // styles that will be applied to each face of the card.
-    border-radius: 10px; 
+    border-radius: 10px;
   }
   .front { // front side styles.
     color: #ffffff;
     background-color: #101010;
     .logo {
-      width: 100px; 
+      width: 100px;
       padding: 10px;
     }
   }
@@ -98,22 +98,22 @@ body {
     background-size: cover;
     color: #FFE81F;
     img {
-      width: 100%; 
-      border-top-left-radius: 10px; 
+      width: 100%;
+      border-top-left-radius: 10px;
       border-top-right-radius: 10px;
       border-bottom: 3px double #FFE81F;
     }
     .description {padding: 30px;}
-    
+
     .logo {
       position: absolute;
       bottom: 10px;
       right: 10px;
-      width: 100px; 
+      width: 100px;
       padding: 10px;
       border: none;
     }
-    
+
   }
   h2 {
 text-transform: uppercase;
@@ -129,11 +129,11 @@ text-transform: uppercase;
 }
 
 cite {
-  position:absolute; 
-  left: 0px; 
-  bottom: 0px; 
-  font-size: 10px; 
-  text-transform: uppercase; 
+  position:absolute;
+  left: 0px;
+  bottom: 0px;
+  font-size: 10px;
+  text-transform: uppercase;
   padding: 20px;
   a {
       color: white;
@@ -180,10 +180,10 @@ cite {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 10px;
-  
+
   a {color: #eeff44;}
   a:visited {
     color: #eeff44;
   }
-  
+
 }
